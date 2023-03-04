@@ -1,6 +1,7 @@
-# repository
+# 简介
 
 maven repository
+
 
 # 插件仓库配置示例
 
@@ -8,41 +9,43 @@ maven repository
 
 <project>
     <build>
-        <plugins>
-            <!-- https://github.com/xiangqians/defoliation-maven-plugin -->
+        
+		<plugins>
+            
+			<!-- https://github.com/xiangqians/maven-tool-plugin -->
             <plugin>
                 <groupId>org.xiangqian</groupId>
-                <artifactId>defoliation-maven-plugin</artifactId>
+                <artifactId>maven-tool-plugin</artifactId>
                 <version>2022.4</version>
                 <executions>
                     <execution>
-                        <id>properties</id>
+                        <id>uuid</id>
                         <phase>validate</phase>
                         <goals>
-                            <goal>properties</goal>
+                            <goal>uuid-gen</goal>
                         </goals>
                         <configuration>
-                            <includes>
-                                <include>${project.basedir}/src/main/resources/bootstrap.yml</include>
-                            </includes>
-                            <properties>
-                                <server.port>server.port</server.port>
-                            </properties>
-                            <skip>true</skip>
+                            <name>uuid</name>
+                            <hyphen>false</hyphen>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
+			
         </plugins>
+		
     </build>
 
     <pluginRepositories>
+	
         <!-- github -->
         <pluginRepository>
             <id>github</id>
             <url>https://raw.githubusercontent.com/xiangqians/repository/master/maven</url>
         </pluginRepository>
+		
     </pluginRepositories>
+	
 </project>
 ```
 
