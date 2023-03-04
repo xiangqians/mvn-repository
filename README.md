@@ -50,7 +50,7 @@ maven repository
 
 如果出现异常：  
 Could not transfer artifact org.xiangqian:defoliation-maven-plugin:pom:2022.4 from/to
-github (https://raw.githubusercontent.com/xiangqians/repository/master/maven): 请求的名称有效，但是找不到请求的类型的数据。 (
+github (https://raw.githubusercontent.com/xiangqians/repository/master/repository): 请求的名称有效，但是找不到请求的类型的数据。 (
 raw.githubusercontent.com)
 
 可以尝试这么解决：
