@@ -2,17 +2,16 @@
 
 maven repository
 
-
 # 插件仓库配置示例
 
 ```xml
 
 <project>
     <build>
-        
-		<plugins>
-            
-			<!-- https://github.com/xiangqians/maven-tool-plugin -->
+
+        <plugins>
+
+            <!-- https://github.com/xiangqians/maven-tool-plugin -->
             <plugin>
                 <groupId>org.xiangqian</groupId>
                 <artifactId>maven-tool-plugin</artifactId>
@@ -31,21 +30,21 @@ maven repository
                     </execution>
                 </executions>
             </plugin>
-			
+
         </plugins>
-		
+
     </build>
 
     <pluginRepositories>
-	
+
         <!-- github -->
         <pluginRepository>
             <id>github</id>
             <url>https://raw.githubusercontent.com/xiangqians/repository/master/maven</url>
         </pluginRepository>
-		
+
     </pluginRepositories>
-	
+
 </project>
 ```
 
@@ -58,10 +57,4 @@ raw.githubusercontent.com)
 
 1. 通过IP查询工具查询 ```raw.githubusercontent.com``` 域名对应IP
 2. 在本机做域名映射
-
-# 仓库配置示例
-
-```mxl
-
-```
 
